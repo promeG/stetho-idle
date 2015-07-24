@@ -5,12 +5,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.0 rc2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -24,7 +24,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.jakewharton.timber:timber:3.0.1'
     compile project(':stetho-idle')
 }
 
@@ -92,7 +92,7 @@ bintray {
     publish = true //If version should be auto published after an upload
     pkg {
         repo = 'maven'
-        name = 'stetho-okhttp-idle'
+        name = 'stetho-timber-idle'
         desc = 'Idle library of Facebook stetho for release builds.'
         websiteUrl = siteUrl
         issueTrackerUrl = siteUrl + '/issues'

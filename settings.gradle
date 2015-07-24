@@ -1,1 +1,1 @@
-include ':stetho-idle', ':stetho-okhttp-idle', ':stetho-urlconnection-idle'
+include ':stetho-idle', ':stetho-okhttp-idle', ':stetho-urlconnection-idle', ':stetho-timber-idle'
