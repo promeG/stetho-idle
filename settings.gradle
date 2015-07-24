@@ -1,0 +1,1 @@
+include ':stetho-idle', ':stetho-okhttp-idle', ':stetho-urlconnection-idle'
