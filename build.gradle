@@ -21,7 +21,7 @@ allprojects {
 
 ext {
     compileSdkVersion = 22
-    buildToolsVersion = '22.0.1'
+    buildToolsVersion = '23.0.0 rc3'
     targetSdkVersion = 22
     groupName = 'com.github.promeg'
     releaseVersion = "1.1.1"
